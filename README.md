@@ -13,15 +13,37 @@
 
 ## Metadados
 
-- **Nomes dos alunos e RGM**
+- Otavio 48763390
+- Lucas 048587885
 
 ## 1. Caracterização da Organização
 *(vale 7,5% — Dimensão Conceitual)*
 
-- **Nome e natureza da organização:** *qual organização real o grupo escolheu (com acesso garantido para pesquisa de campo) — pode ser uma empresa (livraria, lanchonete, pet shop), uma ONG, uma associação comunitária ou outra instituição.*
-- **Contexto e porte:** *com ou sem fins lucrativos; tamanho da operação; número de pessoas envolvidas (funcionários, voluntários, membros, fiéis); volume de atividades (vendas, atendimentos, doações, rituais, eventos).*
-- **Problemas e necessidades identificados:** *qual é a "crise operacional" — o que está desorganizado hoje (planilhas soltas, papel, falta de controle de estoque/doações/cadastros, etc.)?*
-- **Justificativa da escolha:** *por que essa organização foi escolhida e por que ela é um bom caso para o projeto?*
+- **Nome e natureza da organização:** NexaStore Comércio Digital Ltda., conhecida comercialmente como NexaStore.
+- **Contexto e porte:** A NexaStore é uma empresa de pequeno a médio porte, com uma operação voltada principalmente para vendas online.
+Atualmente, a empresa possui aproximadamente 9 funcionários, distribuídos entre diferentes setores da operação:
+- **Problemas e necessidades identificados:** Durante a análise da organização, foi identificada uma dificuldade principalmente relacionada à falta de integração entre as informações utilizadas na operação.
+
+Atualmente, parte dos dados é controlada utilizando diferentes planilhas, registros manuais e informações presentes nas próprias plataformas de venda.
+Esse modelo de funcionamento pode causar diversos problemas durante a rotina da empresa.
+Entre os principais problemas identificados estão:
+planilhas diferentes utilizadas para controlar estoque, vendas e fornecedores;
+dificuldade para manter o estoque atualizado;
+possibilidade de vender produtos que já estão sem estoque;
+demora para localizar informações sobre determinados pedidos;
+dificuldade para acompanhar pedidos vendidos em diferentes plataformas;
+ausência de um histórico centralizado de clientes;
+dificuldade para identificar rapidamente os produtos mais vendidos;
+erros na separação de produtos semelhantes;
+dificuldade no controle de cores, modelos e outras variações dos produtos;
+dificuldade para acompanhar fornecedores;
+informações duplicadas em diferentes planilhas;
+necessidade de conferir informações manualmente;
+possibilidade de erros durante a atualização do estoque.
+- **Justificativa da escolha:** A NexaStore foi escolhida por possuir diversos processos que podem ser melhorados com a implementação de um sistema de informação.
+Por comercializar mais de 70 produtos diariamente, a empresa precisa lidar constantemente com informações relacionadas a clientes, produtos, estoque, pagamentos, fornecedores e entregas.
+A utilização de planilhas e controles separados começa a dificultar o gerenciamento da operação conforme o número de vendas aumenta.
+A empresa também representa um bom caso para o desenvolvimento do projeto porque possui processos que estão diretamente relacionados entre si.
 - **Evidências da organização:** *comprove que a organização existe e que o grupo teve acesso a ela — ex.: fotos do local/da visita, link da organização no Google (Google Maps/Google Meu Negócio, site, rede social), endereço completo e forma de contato (telefone, e-mail, responsável pela organização).*
 
 ---
