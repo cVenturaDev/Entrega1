@@ -53,4 +53,793 @@
     <h2>1. CLIENTE</h2>
 
     <table>
+        <tr>
+            <th>Atributo</th>
+            <th>Descrição</th>
+            <th>Regra de negócio associada</th>
+        </tr>
+
+        <tr>
+            <td><code>id_cliente</code></td>
+            <td>Identificador único do cliente.</td>
+            <td>PK, obrigatório e único.</td>
+        </tr>
+
+        <tr>
+            <td><code>nome</code></td>
+            <td>Nome completo do cliente.</td>
+            <td>Obrigatório.</td>
+        </tr>
+
+        <tr>
+            <td><code>cpf</code></td>
+            <td>CPF do cliente.</td>
+            <td>Obrigatório e único.</td>
+        </tr>
+
+        <tr>
+            <td><code>email</code></td>
+            <td>E-mail do cliente.</td>
+            <td>Deve possuir formato válido.</td>
+        </tr>
+
+        <tr>
+            <td><code>telefone</code></td>
+            <td>Telefone de contato.</td>
+            <td>Opcional.</td>
+        </tr>
+
+        <tr>
+            <td><code>data_nascimento</code></td>
+            <td>Data de nascimento.</td>
+            <td>Data válida.</td>
+        </tr>
+
+        <tr>
+            <td><code>data_cadastro</code></td>
+            <td>Data de cadastro.</td>
+            <td>Obrigatório.</td>
+        </tr>
+
+        <tr>
+            <td><code>status</code></td>
+            <td>Situação do cliente.</td>
+            <td>ATIVO ou INATIVO.</td>
+        </tr>
+    </table>
+
+    <!-- 2. ENDERECO -->
+    <h2>2. ENDERECO</h2>
+
+    <table>
+        <tr>
+            <th>Atributo</th>
+            <th>Descrição</th>
+            <th>Regra de negócio associada</th>
+        </tr>
+
+        <tr>
+            <td><code>id_endereco</code></td>
+            <td>Identificador único do endereço.</td>
+            <td>PK, obrigatório e único.</td>
+        </tr>
+
+        <tr>
+            <td><code>id_cliente</code></td>
+            <td>Cliente do endereço.</td>
+            <td>FK, obrigatório.</td>
+        </tr>
+
+        <tr>
+            <td><code>cep</code></td>
+            <td>CEP do endereço.</td>
+            <td>Formato válido.</td>
+        </tr>
+
+        <tr>
+            <td><code>rua</code></td>
+            <td>Nome da rua.</td>
+            <td>Obrigatório.</td>
+        </tr>
+
+        <tr>
+            <td><code>numero</code></td>
+            <td>Número do imóvel.</td>
+            <td>Obrigatório.</td>
+        </tr>
+
+        <tr>
+            <td><code>complemento</code></td>
+            <td>Complemento do endereço.</td>
+            <td>Opcional.</td>
+        </tr>
+
+        <tr>
+            <td><code>bairro</code></td>
+            <td>Bairro.</td>
+            <td>Obrigatório.</td>
+        </tr>
+
+        <tr>
+            <td><code>cidade</code></td>
+            <td>Cidade.</td>
+            <td>Obrigatório.</td>
+        </tr>
+
+        <tr>
+            <td><code>estado</code></td>
+            <td>Estado.</td>
+            <td>UF válida.</td>
+        </tr>
+
+        <tr>
+            <td><code>tipo_endereco</code></td>
+            <td>Tipo do endereço.</td>
+            <td>Residencial ou comercial.</td>
+        </tr>
+    </table>
+
+    <!-- 3. CATEGORIA -->
+    <h2>3. CATEGORIA</h2>
+
+    <table>
+        <tr>
+            <th>Atributo</th>
+            <th>Descrição</th>
+            <th>Regra de negócio associada</th>
+        </tr>
+
+        <tr>
+            <td><code>id_categoria</code></td>
+            <td>Identificador da categoria.</td>
+            <td>PK, obrigatório e único.</td>
+        </tr>
+
+        <tr>
+            <td><code>nome</code></td>
+            <td>Nome da categoria.</td>
+            <td>Obrigatório.</td>
+        </tr>
+
+        <tr>
+            <td><code>descricao</code></td>
+            <td>Descrição da categoria.</td>
+            <td>Opcional.</td>
+        </tr>
+
+        <tr>
+            <td><code>status</code></td>
+            <td>Situação da categoria.</td>
+            <td>ATIVO ou INATIVO.</td>
+        </tr>
+    </table>
+
+    <!-- 4. PRODUTO -->
+    <h2>4. PRODUTO</h2>
+
+    <table>
+        <tr>
+            <th>Atributo</th>
+            <th>Descrição</th>
+            <th>Regra de negócio associada</th>
+        </tr>
+
+        <tr>
+            <td><code>id_produto</code></td>
+            <td>Identificador do produto.</td>
+            <td>PK, obrigatório e único.</td>
+        </tr>
+
+        <tr>
+            <td><code>id_categoria</code></td>
+            <td>Categoria do produto.</td>
+            <td>FK, obrigatório.</td>
+        </tr>
+
+        <tr>
+            <td><code>sku</code></td>
+            <td>Código do produto.</td>
+            <td>Obrigatório e único.</td>
+        </tr>
+
+        <tr>
+            <td><code>nome</code></td>
+            <td>Nome do produto.</td>
+            <td>Obrigatório.</td>
+        </tr>
+
+        <tr>
+            <td><code>descricao</code></td>
+            <td>Descrição do produto.</td>
+            <td>Opcional.</td>
+        </tr>
+
+        <tr>
+            <td><code>preco</code></td>
+            <td>Preço de venda.</td>
+            <td>Maior que zero.</td>
+        </tr>
+
+        <tr>
+            <td><code>custo</code></td>
+            <td>Custo de aquisição.</td>
+            <td>Maior ou igual a zero.</td>
+        </tr>
+
+        <tr>
+            <td><code>peso</code></td>
+            <td>Peso do produto.</td>
+            <td>Maior que zero.</td>
+        </tr>
+
+        <tr>
+            <td><code>marca</code></td>
+            <td>Marca do produto.</td>
+            <td>Opcional.</td>
+        </tr>
+
+        <tr>
+            <td><code>status</code></td>
+            <td>Situação do produto.</td>
+            <td>ATIVO ou INATIVO.</td>
+        </tr>
+
+        <tr>
+            <td><code>data_cadastro</code></td>
+            <td>Data de cadastro.</td>
+            <td>Obrigatório.</td>
+        </tr>
+    </table>
+
+    <!-- 5. VARIACAO_PRODUTO -->
+    <h2>5. VARIACAO_PRODUTO</h2>
+
+    <table>
+        <tr>
+            <th>Atributo</th>
+            <th>Descrição</th>
+            <th>Regra de negócio associada</th>
+        </tr>
+
+        <tr>
+            <td><code>id_variacao</code></td>
+            <td>Identificador da variação.</td>
+            <td>PK, obrigatório e único.</td>
+        </tr>
+
+        <tr>
+            <td><code>id_produto</code></td>
+            <td>Produto relacionado.</td>
+            <td>FK, obrigatório.</td>
+        </tr>
+
+        <tr>
+            <td><code>sku</code></td>
+            <td>Código da variação.</td>
+            <td>Obrigatório e único.</td>
+        </tr>
+
+        <tr>
+            <td><code>cor</code></td>
+            <td>Cor da variação.</td>
+            <td>Opcional.</td>
+        </tr>
+
+        <tr>
+            <td><code>tamanho</code></td>
+            <td>Tamanho da variação.</td>
+            <td>Opcional.</td>
+        </tr>
+
+        <tr>
+            <td><code>preco</code></td>
+            <td>Preço da variação.</td>
+            <td>Maior que zero.</td>
+        </tr>
+
+        <tr>
+            <td><code>codigo_barras</code></td>
+            <td>Código de barras.</td>
+            <td>Pode ser único.</td>
+        </tr>
+
+        <tr>
+            <td><code>status</code></td>
+            <td>Situação da variação.</td>
+            <td>ATIVO ou INATIVO.</td>
+        </tr>
+    </table>
+
+    <!-- 6. ESTOQUE -->
+    <h2>6. ESTOQUE</h2>
+
+    <table>
+        <tr>
+            <th>Atributo</th>
+            <th>Descrição</th>
+            <th>Regra de negócio associada</th>
+        </tr>
+
+        <tr>
+            <td><code>id_estoque</code></td>
+            <td>Identificador do estoque.</td>
+            <td>PK, obrigatório e único.</td>
+        </tr>
+
+        <tr>
+            <td><code>id_variacao</code></td>
+            <td>Variação relacionada.</td>
+            <td>FK, obrigatório e único.</td>
+        </tr>
+
+        <tr>
+            <td><code>quantidade</code></td>
+            <td>Quantidade disponível.</td>
+            <td>Não pode ser negativa.</td>
+        </tr>
+
+        <tr>
+            <td><code>estoque_minimo</code></td>
+            <td>Quantidade mínima.</td>
+            <td>Maior ou igual a zero.</td>
+        </tr>
+
+        <tr>
+            <td><code>estoque_reservado</code></td>
+            <td>Quantidade reservada.</td>
+            <td>Não pode ser negativa.</td>
+        </tr>
+
+        <tr>
+            <td><code>atualizado_em</code></td>
+            <td>Data da atualização.</td>
+            <td>Atualizado nas alterações.</td>
+        </tr>
+    </table>
+
+    <!-- 7. FORNECEDOR -->
+    <h2>7. FORNECEDOR</h2>
+
+    <table>
+        <tr>
+            <th>Atributo</th>
+            <th>Descrição</th>
+            <th>Regra de negócio associada</th>
+        </tr>
+
+        <tr>
+            <td><code>id_fornecedor</code></td>
+            <td>Identificador do fornecedor.</td>
+            <td>PK, obrigatório e único.</td>
+        </tr>
+
+        <tr>
+            <td><code>razao_social</code></td>
+            <td>Razão social.</td>
+            <td>Obrigatório.</td>
+        </tr>
+
+        <tr>
+            <td><code>nome_fantasia</code></td>
+            <td>Nome comercial.</td>
+            <td>Opcional.</td>
+        </tr>
+
+        <tr>
+            <td><code>cnpj</code></td>
+            <td>CNPJ do fornecedor.</td>
+            <td>Obrigatório e único.</td>
+        </tr>
+
+        <tr>
+            <td><code>telefone</code></td>
+            <td>Telefone de contato.</td>
+            <td>Opcional.</td>
+        </tr>
+
+        <tr>
+            <td><code>email</code></td>
+            <td>E-mail.</td>
+            <td>Formato válido.</td>
+        </tr>
+
+        <tr>
+            <td><code>status</code></td>
+            <td>Situação do fornecedor.</td>
+            <td>ATIVO ou INATIVO.</td>
+        </tr>
+    </table>
+
+    <!-- 8. PRODUTO_FORNECEDOR -->
+    <h2>8. PRODUTO_FORNECEDOR</h2>
+
+    <table>
+        <tr>
+            <th>Atributo</th>
+            <th>Descrição</th>
+            <th>Regra de negócio associada</th>
+        </tr>
+
+        <tr>
+            <td><code>id_produto</code></td>
+            <td>Produto fornecido.</td>
+            <td>FK, obrigatório.</td>
+        </tr>
+
+        <tr>
+            <td><code>id_fornecedor</code></td>
+            <td>Fornecedor do produto.</td>
+            <td>FK, obrigatório.</td>
+        </tr>
+
+        <tr>
+            <td><code>custo_compra</code></td>
+            <td>Custo de compra.</td>
+            <td>Maior ou igual a zero.</td>
+        </tr>
+
+        <tr>
+            <td><code>codigo_fornecedor</code></td>
+            <td>Código usado pelo fornecedor.</td>
+            <td>Opcional.</td>
+        </tr>
+    </table>
+
+    <p>
+        <strong>Observação:</strong>
+        <code>id_produto</code> e <code>id_fornecedor</code>
+        formam uma chave primária composta.
+    </p>
+
+    <!-- 9. PEDIDO -->
+    <h2>9. PEDIDO</h2>
+
+    <table>
+        <tr>
+            <th>Atributo</th>
+            <th>Descrição</th>
+            <th>Regra de negócio associada</th>
+        </tr>
+
+        <tr>
+            <td><code>id_pedido</code></td>
+            <td>Identificador do pedido.</td>
+            <td>PK, obrigatório e único.</td>
+        </tr>
+
+        <tr>
+            <td><code>id_cliente</code></td>
+            <td>Cliente do pedido.</td>
+            <td>FK, obrigatório.</td>
+        </tr>
+
+        <tr>
+            <td><code>id_endereco</code></td>
+            <td>Endereço utilizado.</td>
+            <td>FK, obrigatório.</td>
+        </tr>
+
+        <tr>
+            <td><code>numero_pedido</code></td>
+            <td>Número do pedido.</td>
+            <td>Obrigatório e único.</td>
+        </tr>
+
+        <tr>
+            <td><code>status</code></td>
+            <td>Situação do pedido.</td>
+            <td>Valores previamente definidos.</td>
+        </tr>
+
+        <tr>
+            <td><code>subtotal</code></td>
+            <td>Soma dos itens.</td>
+            <td>Calculado.</td>
+        </tr>
+
+        <tr>
+            <td><code>desconto</code></td>
+            <td>Desconto aplicado.</td>
+            <td>Maior ou igual a zero.</td>
+        </tr>
+
+        <tr>
+            <td><code>frete</code></td>
+            <td>Valor do frete.</td>
+            <td>Maior ou igual a zero.</td>
+        </tr>
+
+        <tr>
+            <td><code>valor_total</code></td>
+            <td>Valor final.</td>
+            <td>Calculado.</td>
+        </tr>
+
+        <tr>
+            <td><code>data_pedido</code></td>
+            <td>Data do pedido.</td>
+            <td>Obrigatório.</td>
+        </tr>
+
+        <tr>
+            <td><code>atualizado_em</code></td>
+            <td>Última atualização.</td>
+            <td>Atualizado quando houver alterações.</td>
+        </tr>
+    </table>
+
+    <!-- 10. ITEM_PEDIDO -->
+    <h2>10. ITEM_PEDIDO</h2>
+
+    <table>
+        <tr>
+            <th>Atributo</th>
+            <th>Descrição</th>
+            <th>Regra de negócio associada</th>
+        </tr>
+
+        <tr>
+            <td><code>id_item</code></td>
+            <td>Identificador do item.</td>
+            <td>PK, obrigatório e único.</td>
+        </tr>
+
+        <tr>
+            <td><code>id_pedido</code></td>
+            <td>Pedido relacionado.</td>
+            <td>FK, obrigatório.</td>
+        </tr>
+
+        <tr>
+            <td><code>id_variacao</code></td>
+            <td>Variação comprada.</td>
+            <td>FK, obrigatório.</td>
+        </tr>
+
+        <tr>
+            <td><code>quantidade</code></td>
+            <td>Quantidade comprada.</td>
+            <td>Maior que zero.</td>
+        </tr>
+
+        <tr>
+            <td><code>preco_unitario</code></td>
+            <td>Preço unitário.</td>
+            <td>Maior que zero.</td>
+        </tr>
+
+        <tr>
+            <td><code>desconto</code></td>
+            <td>Desconto do item.</td>
+            <td>Maior ou igual a zero.</td>
+        </tr>
+
+        <tr>
+            <td><code>subtotal</code></td>
+            <td>Valor total do item.</td>
+            <td>Calculado.</td>
+        </tr>
+    </table>
+
+    <!-- 11. PAGAMENTO -->
+    <h2>11. PAGAMENTO</h2>
+
+    <table>
+        <tr>
+            <th>Atributo</th>
+            <th>Descrição</th>
+            <th>Regra de negócio associada</th>
+        </tr>
+
+        <tr>
+            <td><code>id_pagamento</code></td>
+            <td>Identificador do pagamento.</td>
+            <td>PK, obrigatório e único.</td>
+        </tr>
+
+        <tr>
+            <td><code>id_pedido</code></td>
+            <td>Pedido relacionado.</td>
+            <td>FK, obrigatório.</td>
+        </tr>
+
+        <tr>
+            <td><code>forma_pagamento</code></td>
+            <td>Forma de pagamento.</td>
+            <td>PIX, cartão, boleto etc.</td>
+        </tr>
+
+        <tr>
+            <td><code>valor</code></td>
+            <td>Valor pago.</td>
+            <td>Maior que zero.</td>
+        </tr>
+
+        <tr>
+            <td><code>parcelas</code></td>
+            <td>Número de parcelas.</td>
+            <td>Maior ou igual a 1.</td>
+        </tr>
+
+        <tr>
+            <td><code>status</code></td>
+            <td>Situação do pagamento.</td>
+            <td>PENDENTE, APROVADO, RECUSADO ou ESTORNADO.</td>
+        </tr>
+
+        <tr>
+            <td><code>codigo_transacao</code></td>
+            <td>Código da transação.</td>
+            <td>Pode ser único.</td>
+        </tr>
+
+        <tr>
+            <td><code>data_pagamento</code></td>
+            <td>Data do pagamento.</td>
+            <td>Pode ser nula enquanto pendente.</td>
+        </tr>
+    </table>
+
+    <!-- 12. ENTREGA -->
+    <h2>12. ENTREGA</h2>
+
+    <table>
+        <tr>
+            <th>Atributo</th>
+            <th>Descrição</th>
+            <th>Regra de negócio associada</th>
+        </tr>
+
+        <tr>
+            <td><code>id_entrega</code></td>
+            <td>Identificador da entrega.</td>
+            <td>PK, obrigatório e único.</td>
+        </tr>
+
+        <tr>
+            <td><code>id_pedido</code></td>
+            <td>Pedido relacionado.</td>
+            <td>FK, obrigatório e único.</td>
+        </tr>
+
+        <tr>
+            <td><code>transportadora</code></td>
+            <td>Empresa responsável.</td>
+            <td>Obrigatória quando houver envio.</td>
+        </tr>
+
+        <tr>
+            <td><code>codigo_rastreio</code></td>
+            <td>Código de rastreamento.</td>
+            <td>Opcional antes do envio.</td>
+        </tr>
+
+        <tr>
+            <td><code>status</code></td>
+            <td>Situação da entrega.</td>
+            <td>Valores previamente definidos.</td>
+        </tr>
+
+        <tr>
+            <td><code>data_envio</code></td>
+            <td>Data do envio.</td>
+            <td>Pode ser nula antes do envio.</td>
+        </tr>
+
+        <tr>
+            <td><code>previsao_entrega</code></td>
+            <td>Data prevista.</td>
+            <td>Data válida.</td>
+        </tr>
+
+        <tr>
+            <td><code>data_entrega</code></td>
+            <td>Data da entrega.</td>
+            <td>Pode ser nula até a entrega.</td>
+        </tr>
+    </table>
+
+    <!-- 13. HISTORICO_PEDIDO -->
+    <h2>13. HISTORICO_PEDIDO</h2>
+
+    <table>
+        <tr>
+            <th>Atributo</th>
+            <th>Descrição</th>
+            <th>Regra de negócio associada</th>
+        </tr>
+
+        <tr>
+            <td><code>id_historico</code></td>
+            <td>Identificador do histórico.</td>
+            <td>PK, obrigatório e único.</td>
+        </tr>
+
+        <tr>
+            <td><code>id_pedido</code></td>
+            <td>Pedido relacionado.</td>
+            <td>FK, obrigatório.</td>
+        </tr>
+
+        <tr>
+            <td><code>status_anterior</code></td>
+            <td>Status anterior.</td>
+            <td>Pode ser nulo no primeiro registro.</td>
+        </tr>
+
+        <tr>
+            <td><code>status_novo</code></td>
+            <td>Novo status.</td>
+            <td>Obrigatório.</td>
+        </tr>
+
+        <tr>
+            <td><code>descricao</code></td>
+            <td>Descrição da alteração.</td>
+            <td>Opcional.</td>
+        </tr>
+
+        <tr>
+            <td><code>data_alteracao</code></td>
+            <td>Data da alteração.</td>
+            <td>Obrigatório.</td>
+        </tr>
+    </table>
+
+    <!-- 14. MOVIMENTACAO_ESTOQUE -->
+    <h2>14. MOVIMENTACAO_ESTOQUE</h2>
+
+    <table>
+        <tr>
+            <th>Atributo</th>
+            <th>Descrição</th>
+            <th>Regra de negócio associada</th>
+        </tr>
+
+        <tr>
+            <td><code>id_movimentacao</code></td>
+            <td>Identificador da movimentação.</td>
+            <td>PK, obrigatório e único.</td>
+        </tr>
+
+        <tr>
+            <td><code>id_variacao</code></td>
+            <td>Variação movimentada.</td>
+            <td>FK, obrigatório.</td>
+        </tr>
+
+        <tr>
+            <td><code>id_pedido</code></td>
+            <td>Pedido relacionado.</td>
+            <td>FK, opcional.</td>
+        </tr>
+
+        <tr>
+            <td><code>tipo</code></td>
+            <td>Tipo de movimentação.</td>
+            <td>ENTRADA, SAIDA, AJUSTE ou RESERVA.</td>
+        </tr>
+
+        <tr>
+            <td><code>quantidade</code></td>
+            <td>Quantidade movimentada.</td>
+            <td>Maior que zero.</td>
+        </tr>
+
+        <tr>
+            <td><code>motivo</code></td>
+            <td>Motivo da movimentação.</td>
+            <td>Pode ser obrigatório dependendo do tipo.</td>
+        </tr>
+
+        <tr>
+            <td><code>data_movimentacao</code></td>
+            <td>Data da movimentação.</td>
+            <td>Obrigatório.</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
 ```
