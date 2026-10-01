@@ -582,9 +582,9 @@ A IA foi utilizada como apoio e não como substituição da análise realizada p
 | **Ferramenta e etapa**               | ChatGPT — organização da modelagem do banco de dados e elaboração do DER.                                                                                                                                       |
 | **Motivação**                        | Utilizar a IA como apoio para estruturar as entidades, atributos, relacionamentos e cardinalidades identificados na organização.                                                                                |
 | **Prompt utilizado**                 | "Me ajude a organizar a formatação do dicionario"                                                                                                                                                                                    |
-| **Resposta recebida**    |           | Foi entregue a seção 5 de forma organizada.
+| **Resposta recebida**              | organização e formatação do dicionário de dados. |
 
-| **Reflexão crítica**     |            | A IA pode sugerir estruturas genéricas que não necessariamente representam exatamente a realidade da organização. Por isso, as informações precisam ser verificadas e adaptadas aos processos reais da empresa. |
+| **Reflexão crítica**                | A IA pode sugerir estruturas genéricas que não necessariamente representam exatamente a realidade da organização. Por isso, as informações precisam ser verificadas e adaptadas aos processos reais da empresa. |
 
 ## 9.2 Uso da IA na documentação
 
