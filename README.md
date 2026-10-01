@@ -34,8 +34,7 @@ possibilidade de erros durante a atualização do estoque.
 Por comercializar mais de 70 produtos diariamente, a empresa precisa lidar constantemente com informações relacionadas a clientes, produtos, estoque, pagamentos, fornecedores e entregas.
 A utilização de planilhas e controles separados começa a dificultar o gerenciamento da operação conforme o número de vendas aumenta.
 A empresa também representa um bom caso para o desenvolvimento do projeto porque possui processos que estão diretamente relacionados entre si.
-- **Evidências da organização:** *comprove que a organização existe e que o grupo teve acesso a ela — ex.: fotos do local/da visita, link da organização no Google (Google Maps/Google Meu Negócio, site, rede social), endereço completo e forma de contato (telefone, e-mail, responsável pela organização).*
-
+- **Evidências da organização:** https://loja.nexapaybrasil.com.br/
 ---
 
 # 2. Processos de Negócio
