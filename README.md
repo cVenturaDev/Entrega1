@@ -5,7 +5,7 @@
 ## Metadados
 
 - Otavio 48763390
-- Lucas 048587885
+- Lucas 48587885
 
 ## 1. Caracterização da Organização
 
